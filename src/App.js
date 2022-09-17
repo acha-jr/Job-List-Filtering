@@ -12,7 +12,7 @@ function App() {
     <div className='container'>
       {filter.length > 0 && <Filter />}
       <Jobs />
-      <div className='attribution'>
+      <footer>
         Challenge by{" "}
         <a
           href='https://www.frontendmentor.io?ref=challenge'
@@ -30,7 +30,7 @@ function App() {
           acha-jr
         </a>
         .
-      </div>
+      </footer>
     </div>
   );
 }
