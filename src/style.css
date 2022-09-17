@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+  --light-grayish-cyan-background: hsl(180, 52%, 96%);
+  --light-grayish-cyan: hsl(180, 31%, 95%); /* Filter Tablets */
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+
+  font-family: "League Spartan", sans-serif;
+}
+body {
+  position: relative;
+  background: var(--light-grayish-cyan);
+}
+body::before {
+  content: "";
+  height: 150px;
+  width: 100vw;
+  position: absolute;
+  background: url(../public/images/bg-header-desktop.svg) no-repeat,
+    var(--desaturated-dark-cyan) 10%;
+  z-index: -100;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  body::before {
+    background: url(../public/images/bg-header-mobile.svg) no-repeat,
+      var(--desaturated-dark-cyan) 10%;
+    background-size: cover;
+  }
+}
+
+.attribution {
+  padding: 20px;
+  color: var(--very-dark-grayish-cyan);
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--desaturated-dark-cyan);
+}
