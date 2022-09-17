@@ -42,7 +42,7 @@ body::before {
 }
 
 footer {
-  padding: 20px;
+  padding: 50px;
   color: var(--very-dark-grayish-cyan);
 }
 footer a {

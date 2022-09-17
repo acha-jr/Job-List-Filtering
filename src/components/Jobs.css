@@ -1,6 +1,9 @@
 main {
-  margin-top: 200px;
+  margin-top: 240px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .card {
   background: white;
@@ -10,7 +13,7 @@ main {
   justify-content: space-between;
   gap: 30px;
   width: 80%;
-  margin: 25px auto;
+  margin: auto;
   align-items: center;
   box-shadow: 0 10px 18px -5px hsla(180, 29%, 50%, 0.5);
   position: relative;
@@ -87,7 +90,8 @@ main {
 @media screen and (max-width: 700px) {
   main {
     margin-top: 150px;
-    padding-top: 30px;
+    padding-top: 50px;
+    gap: 50px;
   }
   .card {
     width: 90%;
@@ -96,9 +100,6 @@ main {
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
-  }
-  .card:not(:first-of-type) {
-    margin-top: 50px;
   }
   .info img {
     position: absolute;
