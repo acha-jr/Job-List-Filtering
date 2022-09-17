@@ -6,7 +6,7 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 
 ![](./preview.gif)
 
-- Live Site URL: https://obinna-jobs.netlify.app
+### Live Site URL: https://obinna-jobs.netlify.app
 
 ### Built with
 
